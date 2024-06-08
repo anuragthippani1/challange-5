@@ -1,0 +1,88 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEAE3;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header {
+    text-align: left;
+    font-size: small;
+}
+
+
+nav {
+    padding: 2vw 0vw 0vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+
+
+}
+
+nav h2 {
+    font-family: Copperplate;
+    font-size: 36px;
+}
+
+.lead {}
+
+
+
+.button {
+    background-color: #EFEAE3;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: 4px 4px 0 0 #422800;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+.button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
